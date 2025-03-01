@@ -1,0 +1,104 @@
+ASCII code disingkat dari American Standard Code for Information Interchange yang dimana standar pengkodean krakter untuk 
+melakukan pemrosesan pemberian angka ke karakter grafis , terutama karakter tertulis dari bahasa manusia, memungkinkan mereka 
+untuk disimpan, dikirim, dan diubah menggunakan komputer digital yang dimana pada setiap abjad yang di ketika contoh "W" akan di 
+ke dalam bilang binary yang dimana bilang binary adalah salah satu bentuk komunikasi terhadap bahasa mesin dan untuk komunikasi 
+elektronik. Dan untuk abjad "W" itu sendiri dikodekan dalam binary sebagai "1010111".  Kode ASCII mewakili teks di komputer, 
+peralatan telekomunikasiadalah transmisi informasi dengan berbagai jenis teknologi melalui kabel, radio, optik, atau sistem 
+elektromagnetik lainnya. Karena keterbatasan teknis sistem komputer pada saat ditemukan, ASCII hanya memiliki 128 titik kode 
+atau posisi kode yang dimana nilai dalah nilai numerik yang dipetakan ke karakter tertentu . Titik kode biasanya mewakili satu 
+grafem yang dimana grafem itu sendiri ialah  diartikan sebagai satuan tulisan terkecil yang berhubungan dengan bunyi atau 
+telepon (dan telepon berbeda yang mewakili fonem yang sama disebut alofon)
+
+contoh-contoh kumpulan angka numerik:
+
+                                      1. Deret Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+                                      2. Bilangan Prima: 2, 3, 5, 7, 11, 13, 17, 19, 23, ...
+                                      3. Bilangan Bulat: -3, -2, -1, 0, 1, 2, 3, ...
+                                      4. Deret Aritmatika: 2, 4, 6, 8, 10, 12, 14, ...
+                                      5. Pi (π): 3.14159265358979323846...
+                                      6. Bilangan Euler (e): 2.71828182845904523536...
+                                      7. Bilangan Prima Pertama: 2
+                                      8. Bilangan Genap: 0, 2, 4, 6, 8, 10, ...
+                                      9. Bilangan Ganjil: 1, 3, 5, 7, 9, 11, ...
+                                      10. Bilangan Kuadrat: 1, 4, 9, 16, 25, 36, ...
+
+Link untuk Ariikel tentang ASCII = https://en.wikipedia.org/wiki/ASCII
+Link untuk Artikel tentang Telekomunikasi = https://en.wikipedia.org/wiki/Telecommunications
+Link untuk Artikel tentang Code Point = https://en.wikipedia.org/wiki/Code_point
+Link untuk Aritkel tentang grafem = https://en.wikipedia.org/wiki/Grapheme
+
+
+(a).  Unicode  secara formal Standar Unicode, adalah standar teknologi informasi untuk pengkodean, representasi, dan penanganan 
+      teks yang konsisten yang diungkapkan di sebagian besar sistem penulisan dunia Dalam terminologi telekomunikasi berbasis komputer 
+      dan mesin, karakter adalah satuan informasi yang secara kasar sesuai dengan grafem, satuan mirip grafem, atau simbol, seperti 
+      dalam alfabet atau suku kata dalam bentuk tertulis bahasa alami. Contoh karakter mencakup huruf, angka numerik, tanda baca umum 
+      (seperti "." atau "-"), dan spasi. Konsep ini juga mencakup karakter kontrol, yang tidak sesuai dengan simbol yang terlihat 
+      melainkan instruksi untuk memformat atau memproses teks. Contoh karakter kontrol mencakup pengangkutan kembali dan tab serta 
+      instruksi lain ke printer atau perangkat lain yang menampilkan atau memproses teks. Karakter biasanya digabungkan menjadi string
+      Dan untuk Unicode itu sendiri sekarang sudah, mendefinisikan pada versi saat ini (15.0) 149.186 karakter mencakup 161 skrip 
+      modern dan bersejarah, serta simbol, ribuan emoji (termasuk dalam warna), dan kontrol non-visual dan kode pemformatan. Unicode
+      dapat menyandikan hingga sekitar 1,1 juta karakter.Standar ini telah diterapkan di banyak teknologi terkini, termasuk sistem 
+      operasi modern, XML, JSON, dan sebagian besar bahasa pemrograman modern, terkadang hanya dalam bentuk UTF-8. Unicode disinkronkan
+      dengan ISO/IEC 10646, masing-masing kode untuk kode identik satu sama lain. Standar Unicode, bagaimanapun, mencakup lebih dari 
+      sekedar kode dasar. Selain pengkodean karakter, publikasi resmi Konsorsium mencakup beragam detail tentang skrip dan cara 
+      menampilkannya: aturan normalisasi, dekomposisi, penyusunan, rendering, dan urutan tampilan teks dua arah untuk teks multibahasa, dan sebagainya.
+
+(b). Deskripsi bahasa pemrograman biasanya dibagi menjadi dua komponen sintaks (bentuk) dan semantik (makna), yang biasanya 
+     didefinisikan oleh bahasa formal . Beberapa bahasa ditentukan oleh dokumen spesifikasi (misalnya, bahasa pemrograman C ditentukan 
+     oleh Standar ISO ) sementara bahasa lain (seperti Perl ) memiliki implementasi dominan yang diperlakukan sebagai referensi.
+     Beberapa bahasa memiliki keduanya, dengan bahasa dasar yang ditentukan oleh standar dan ekstensi diambil dari implementasi 
+     dominan yang umum. Dalam sebagian besar konteks praktis, bahasa pemrograman melibatkan komputer; akibatnya, bahasa pemrograman 
+     biasanya didefinisikan dan dipelajari dengan cara ini. Bahasa pemrograman berbeda dengan bahasa alami , bahasa alami hanya 
+     digunakan untuk interaksi antar manusia, sedangkan bahasa pemrograman juga memungkinkan manusia untuk mengkomunikasikan instruksi ke mesin.
+
+(c). Domain bahasanya juga patut dipertimbangkan. Bahasa markup seperti XML , HTML , atau troff , yang mendefinisikan data 
+     terstruktur , biasanya tidak dianggap sebagai bahasa pemrograman. Namun, bahasa pemrograman dapat berbagi sintaksis dengan bahasa 
+     markup jika semantik komputasi ditentukan. 
+
+(d). Bahasa markup adalah sistem pengkodean teks yang terdiri dari sekumpulan simbol yang disisipkan dalam dokumen teks untuk 
+     mengontrol struktur, format, atau hubungan antar bagiannya. Markup sering digunakan untuk mengontrol tampilan dokumen atau 
+     untuk memperkaya kontennya guna memfasilitasi pemrosesan otomatis. Serta  seperangkat aturan yang mengatur informasi markup apa 
+     yang boleh disertakan dalam dokumen dan bagaimana informasi tersebut digabungkan dengan konten dokumen sedemikian rupa untuk 
+     memfasilitasi penggunaan oleh manusia dan program komputer. 
+
+      Contoh penggunaan bahasa markup : 
+      <!DOCTYPEhtml>
+      <html> _ _
+        <kepala> _ _
+          < meta  charset = "utf-8" >
+          < title > Halaman pengujian saya </ title >
+        </kepala> _ _
+        <tubuh> _ _
+          < h1 > Mozilla itu keren </ h1 >
+          < img  src = "images/firefox-icon.png"  alt = "Logo Firefox: rubah menyala yang mengelilingi bumi." >
+
+          < p > Di Mozilla, kami adalah komunitas global </ p >
+
+          < ul >  <!-- diubah menjadi daftar di tutorial -->
+            < li > ahli teknologi </ li >
+            < li > pemikir </ li >
+            < li > pembangun </ li >
+          </ul> _ _
+
+          < p > bekerja sama untuk menjaga Internet tetap hidup dan dapat diakses, sehingga orang-orang di seluruh dunia dapat menjadi kontributor dan pencipta Web yang terinformasi. Kami percaya tindakan kolaborasi manusia di seluruh platform terbuka ini penting bagi pertumbuhan individu dan masa depan kita bersama. </p> _ _
+
+          < p > Baca < a  href = "https://www.mozilla.org/en-US/about/manifesto/" > Mozilla Manifesto </ a > untuk mempelajari lebih lanjut tentang nilai dan prinsip yang memandu upaya mencapai tujuan misi kita. </p> _ _
+        </tubuh> _ _
+      </html> _ _
+
+(d). Di Unicode , skrip adalah kumpulan huruf dan tanda tertulis lainnya yang digunakan untuk mewakili informasi tekstual dalam
+     satu atau lebih sistem penulisan. Beberapa skrip mendukung satu dan hanya satu sistem penulisan dan bahasa, misalnya bahasa Jawa. 
+     Skrip lain mendukung banyak sistem penulisan yang berbeda: misalnya aksara latin mendukung bahasa inggris, perancis, jerman, 
+     italia, vietnam, latinitu sendiri, dan beberapa bahasa lainnya. Unicode 15.0 mendefinisikan 161 skrip terpisah, termasuk 94 
+     skrip modern dan 67 skrip kuno atau bersejarah. Lebih banyak skrip sedang dalam proses pengkodean atau telah dialokasikan 
+     sementara untuk pengkodean dalam peta jalan. Untuk daftar bahasa yang didukung oleh setiap skrip, lihat daftar bahasa 
+     berdasarkan sistem penulisan. Kurang lebih pelengkap skrip adalah simbol dan karakter kontrol Unicode.
+
+Link untuk artikel tentang Unicode = https://en.wikipedia.org/wiki/Unicode
+Link untuk artikel tentang Deskrip bahasa pemrograman, dan Domain = https://en.wikipedia.org/wiki/Programming_language#References
+Link untuk artikel tentang Bahasa markup = https://en.wikipedia.org/wiki/Markup_language
+Link untuk artikel tentang Skrip (Unicode) = https://en.wikipedia.org/wiki/Script_(Unicode)
+
+Catatan penting !!!
+pada abjad a...d yang dimana masih satu cakupan pembahasan tentang unicode
+

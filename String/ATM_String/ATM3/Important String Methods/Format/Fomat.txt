@@ -1,0 +1,114 @@
+Metode ini format()merupakan alat yang ampuh yang memungkinkan pengembang membuat string yang diformat dengan menyematkan 
+variabel dan nilai ke dalam placeholder dalam string templat. Metode ini menawarkan cara yang fleksibel dan serbaguna untuk 
+membangun keluaran tekstual untuk berbagai aplikasi. Fungsi format string Python () telah diperkenalkan untuk menangani 
+pemformatan string kompleks dengan lebih efisien. Kadang-kadang kita ingin membuat pernyataan cetak yang digeneralisasikan dalam 
+hal ini daripada menulis pernyataan cetak setiap kali kita menggunakan konsep pemformatan.
+
+{ 
+    Sintaks dari format()metode ini adalah :
+                                            templat.format(p0, p1, ..., k0=v0, k1=v1, ...)
+Di Sini,p0, hal1,...adalah argumen posisi dan,k0, k1,...adalah argumen kata kunci dengan nilaiv0, v1,...masing-masing. Dan, 
+templat adalah campuran kode format dengan placeholder untuk argumen.
+
+    Contoh code Sintaks format :
+                                 print("Nama, {0} Umur {1} ".format("Muhammad Fadel", 20))
+}
+
+{
+    Format string() Parameter mengambil sejumlah parameter. Namun, parameternya dibagi menjadi dua jenis:
+    
+    1. Positional parameters : Daftar parameter yang dapat diakses dengan indeks parameter di dalam kurung kurawal{index}.
+       Contoh parameter posisi tanpa menggunakan Keyword:
+                                                         Nama = "Muhammad Fadel"
+                                                         Umur = 20
+                                                         Perkerjaan = "Cyeber Securty"
+                                                         Hasil = 'Nama {}, Umur {}, Perkerjaan {}'.format(Nama, Umur, Perkerjaan)
+                                                         print(Hasil)
+    
+    Karena string templat mereferensikan format()argumen sebagai '{0}' dan '{1}', argumen tersebut adalah argumen posisi. Keduanya 
+    juga dapat direferensikan tanpa angka dan '{}' Python secara internal mengonversinya menjadi angka.
+
+    2. Keyword parameters : Daftar parameter bertipe key=value, yang dapat diakses dengan kunci parameter di dalam kurung kurawal{key}.
+       Contoh parameter kunci tanpa menggunakan keyword:
+                                                         Nama = "Muhammad Fadel"
+                                                         Umur = 20
+                                                         Perkerjaan = "Cyeber Securty"
+                                                         Hasil = 'Nama {0}, Umur {1}, Perkerjaan {2}'.format(Nama, Umur, Perkerjaan)
+                                                         print(Hasil)     
+
+    Pada penggunaan Keyword parameter yang dimana Python biasanya menetapkan placeholder dengan indeks default dalam urutan 
+    seperti 0, 1, 2, 3…. untuk mengakses nilai yang diteruskan sebagai parameter. Jadi ketika ia menemukan placeholder yang 
+    indeksnya tidak memiliki nilai apa pun yang dimasukkan ke dalam sebagai parameter, ia akan memunculkan IndexError.                                     
+}
+
+Pemformatan angka dengan format() Anda dapat memformat angka menggunakan penentu format yang diberikan di bawah ini:
+
+                                                    Jenis Pemformatan Angka
+            Jenis	                Arti
+             D	            Bilangan bulat desimal
+             C	            Karakter Unicode yang sesuai
+             B          	Format biner
+             o	            format oktal
+             X	            Format heksadesimal (huruf kecil)
+             X	            Format heksadesimal (huruf besar)
+             N	            Sama seperti 'd'. Kecuali itu menggunakan pengaturan lokal saat ini untuk pemisah nomor
+             e	            Notasi eksponensial. (huruf kecil e)
+             E	            Notasi eksponensial (huruf besar E)
+             F	            Menampilkan nomor titik tetap (Default: 6)
+             F          	Sama seperti 'f'. Kecuali menampilkan 'inf' sebagai 'INF' dan 'nan' sebagai 'NAN'
+             G	            Format umum. Membulatkan angka menjadi p angka penting. (Presisi default: 6)
+             G	            Sama seperti 'g'. Kecuali beralih ke 'E' jika jumlahnya besar.
+             %	            Persentase. Kalikan dengan 100 dan beri % di akhir.
+
+
+
+Pemformatan angka dengan padding untuk int dan float :
+
+                                                    # integer numbers with minimum width
+                                                    print("{:5d}".format(12))
+
+                                                    # width doesn't work for numbers longer than padding
+                                                    print("{:2d}".format(1234))
+
+                                                    # padding for float numbers
+                                                    print("{:8.3f}".format(12.2346))
+
+                                                    # integer numbers with minimum width filled with zeros
+                                                    print("{:05d}".format(12))
+
+                                                    # padding for float numbers filled with zeros
+                                                    print("{:08.3f}".format(12.2346))
+
+                                                    Keluaran :
+
+                                                    1.   12
+                                                    2.1234
+                                                    3.  12.235
+                                                    4.00012
+                                                    5.0012.235
+
+Cacatan Penting :
+
+                  1. Pada pernyataan pertama, {:5d}mengambil argumen bilangan bulat dan menetapkan lebar minimum 5. Karena, tidak ada perataan yang ditentukan, 
+                     maka perataannya disejajarkan ke kanan.
+
+                  2. Pada pernyataan kedua, terlihat lebar (2) lebih kecil dari angka (1234), sehingga tidak memakan spasi ke kiri tetapi juga tidak memotong 
+                     angkanya.
+
+                  3. Tidak seperti bilangan bulat, float memiliki bagian bilangan bulat dan desimal. Dan, lebar mininum yang ditentukan untuk nomor tersebut adalah 
+                     untuk kedua bagian secara keseluruhan termasuk "." .
+
+                  4. Pada pernyataan ketiga, {:8.3f}potong bagian desimal menjadi 3 tempat dengan membulatkan 2 digit terakhir. Dan angkanya sekarang 12.235, 
+                     mengambil lebar 8 secara keseluruhan menyisakan 2 tempat ke kiri.
+
+                  5. Jika Anda ingin mengisi tempat yang tersisa dengan nol, tempatkan nol sebelum penentu format melakukan hal ini. Ia berfungsi baik untuk 
+                     bilangan bulat dan float: {:05d}dan {:08.3f}.
+
+Pemformatan angka dengan perataan (<, ^, >, and, =) digunakan untuk penyelarasan ketika menetapkan lebar tertentu pada angka
+
+Jenis operator  Arti
+
+<               Rata kiri pada ruang yang tersisa
+^               Rata tengah dengan ruang yang tersisa
+>               Sejajar kanan dengan ruang yang tersisa
+=               Memaksa tanda (+) (-) ke posisi paling kiri

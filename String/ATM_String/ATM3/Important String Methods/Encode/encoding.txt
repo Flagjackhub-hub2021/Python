@@ -1,0 +1,119 @@
+(a). Character encoding  adalah proses pemberian nomor pada karakter grafis, terutama karakter tertulis dalam bahasa manusia, yang 
+     memungkinkannya disimpan, dikirim, dan diubah menggunakan komputer digital. Nilai numerik yang membentuk pengkodean 
+     karakter dikenal sebagai " titik kode " dan secara kolektif terdiri dari "ruang kode", " halaman kode", atau "peta karakter".
+     Kode karakter awal yang terkait dengan telegraf optik atau listrik hanya dapat mewakili sebagian karakter yang digunakan dalam 
+     bahasa tertulis, terkadang terbatas pada huruf besar, angka, dan beberapa tanda baca saja.
+
+(b). perbedaan antara istilah-istilah pada Terminologi dalam pengkodean karakter :
+
+     1. Karakter adalah satuan minimal teks yang mempunyai nilai semantik
+     2. Kumpulan karakter adalah kumpulan elemen yang digunakan untuk mewakili teks. Misalnya alfabet Latin dan alfabet Umum 
+        keduanya merupakan rangkaian karakter.
+     3. Kumpulan karakter berkode adalah kumpulan karakter yang dipetakan ke kumpulan angka unik. ini juga sering disebut sebagai 
+        halaman kode. contoh halaman code yaitu  adalah tampilan atau contoh kode yang digunakan untuk memberikan gambaran atau 
+        panduan dalam menulis kode program. contohnya yaitu :
+        1.1. Bisa berubah tampilan lading page pada front-end 
+        1.2. def greeting(name):
+             print("Halo, " + name + "! Selamat datang.")
+             greeting("Ahmad"). Untuk back-end itu sendiri yang dimana bisa menjadi comment berguana untuk menjadi dokementasi
+     4.  Repertoar karakter adalah kumpulan karakter yang dapat diwakili oleh kumpulan karakter berkode tertentu. Repertoar 
+         mungkin tertutup, artinya tidak ada penambahan yang diperbolehkan tanpa membuat standar baru seperti halnya ASCII dan
+         sebagian besar seri ISO-8859, atau mungkin terbuka, memungkinkan penambahan (seperti halnya Unicode dan sampai batas tertentu 
+     5. Titik kode adalah nilai atau posisi karakter dalam kumpulan karakter berkode.
+     6. Ruang kode adalah rentang nilai numerik yang direntang oleh kumpulan karakter berkode.\
+     7. Unit kode adalah kombinasi bit minimum yang dapat mewakili karakter dalam pengkodean karakter (dalam istilah ilmu komputer, ini adalah ukuran kata dari pengkodean karakter)
+        misalnya, unit kode umum mencakup 7-bit, 8-bit, 16-bit, dan 32-bit. Dalam beberapa pengkodean, beberapa karakter 
+        dikodekan menggunakan beberapa unit kode pengkodean seperti itu disebut sebagai pengkodean lebar variabel.
+
+Ukuran satuan kode setara dengan pengukuran bit untuk pengkodean tertentu :
+     
+     1. Unit kode di US-ASCII terdiri dari 7 bit.
+     2. Unit kode dalam UTF-8 , EBCDIC dan GB 18030 terdiri dari 8 bit.
+     3. Unit kode dalam UTF-16 terdiri dari 16 bit.
+     4. Unit kode dalam UTF-32 terdiri dari 32 bit.
+
+Poin kode yang dimana Titik kode diwakili oleh urutan unit kode. Pemetaan ditentukan oleh pengkodean. Jadi, jumlah unit kode 
+yang diperlukan untuk mewakili titik kode bergantung pada pengkodean:
+
+    1. UTF-8: titik kode dipetakan ke urutan satu, dua, tiga, atau empat unit kode.
+    2. UTF-16: unit kode dua kali lebih panjang dari unit kode 8-bit. Oleh karena itu, setiap titik kode dengan nilai skalar 
+       kurang dari U+10000 dikodekan dengan satu unit kode. Poin kode dengan nilai U+10000 atau lebih tinggi masing-masing 
+       memerlukan dua unit kode. Pasangan unit kode ini memiliki istilah unik di UTF-16: "Pasangan pengganti Unicode".
+    3. UTF-32: unit kode 32-bit cukup besar sehingga setiap titik kode direpresentasikan sebagai satu unit kode.
+
+Link artikel tentang Character encoding = https://en.wikipedia.org/wiki/Character_encoding
+
+(a). Variable-width encoding Pengkodean lebar variabel adalah jenis skema pengkodean karakter di mana kode dengan panjang berbeda 
+     digunakan untuk mengkodekan kumpulan karakter (repertoar simbol) untuk representasi, biasanya di komputer.  Pengkodean lebar 
+     variabel yang paling umum adalah pengkodean multibyte, yang menggunakan jumlah byte (oktet) yang bervariasi untuk mengkodekan 
+     karakter yang berbeda.
+
+(b). Pengkodean multibyte biasanya merupakan hasil dari kebutuhan untuk menambah jumlah karakter yang dapat dikodekan tanpa 
+     merusak kompatibilitas dengan batasan yang ada. Misalnya, dengan satu byte (8 bit) per karakter, seseorang dapat mengkodekan 
+     256 kemungkinan karakter; untuk mengkodekan lebih dari 256 karakter, pilihan yang jelas adalah menggunakan dua atau lebih 
+     byte per unit pengkodean, dua byte (16 bit) akan memungkinkan 65.536 karakter yang mungkin, tetapi perubahan seperti itu 
+     akan merusak kompatibilitas dengan sistem yang ada dan oleh karena itu mungkin tidak mungkin dilakukan sama sekali.
+
+Link artikel tentang Variable- width = https://en.wikipedia.org/wiki/Variable-width_encoding
+
+UTF-8 UTF-8 mampu menyandikan seluruh 1.112.064 titik kode karakter yang valid di Unicode menggunakan satu hingga empat unit kode 
+satu byte (8-bit). Titik kode dengan nilai numerik lebih rendah, yang cenderung lebih sering muncul, dikodekan menggunakan byte 
+yang lebih sedikit. Ini dirancang untuk kompatibilitas mundur dengan ASCII : 128 karakter pertama Unicode, yang sesuai 
+satu-ke-satu dengan ASCII, dikodekan menggunakan satu byte dengan nilai biner yang sama dengan ASCII, sehingga teks ASCII yang 
+valid adalah UTF-8 yang valid -Unicode yang dikodekan juga. UTF-8 menghasilkan lebih sedikit masalah internasionalisasi 
+dibandingkan pengkodean teks alternatif apa pun, dan telah diterapkan di semua sistem operasi modern, termasuk 
+Microsoft Windows, dan standar seperti JSON, di mana, semakin sering terjadi, hal ini adalah satu-satunya bentuk Unicode yang 
+diperbolehkan. UTF-8 adalah pengkodean dominan untuk World Wide Web (dan teknologi internet), mencakup 98,0% dari seluruh 
+halaman web, lebih dari 99,0% dari 10.000 halaman teratas, dan hingga 100% untuk banyak bahasa, pada tahun 2023. 
+Hampir semua negara dan bahasa memiliki 95% atau lebih penggunaan pengkodean UTF-8 di web.
+
+Pengkodean UTF-8 mengkodekan titik kode dalam satu hingga empat byte, bergantung pada nilai titik kode. Pada tabel berikut, 
+karakter x diganti dengan bit titik kode:
+
+Poin kode ↔ konversi UTF-8
+Poin kode pertama	Poin kode terakhir	byte 1	byte 2	byte 3	byte 4
+U+0000	U+007F	0xxxxxxx	
+U+0080	U+07FF	110xxxx	10xxxxxx	
+U+0800	U+FFFF	1110xxxx	10xxxxxx	10xxxxxx	
+U+10000	[b]U+10FFFF	11110xxx	10xxxxxx	10xxxxxx	10xxxxxx
+
+Untuk [b] yang dimana Ada cukup x bit untuk menyandikan hingga 0x1FFFFF, tetapi RFC 3629 §3 saat ini membatasi pengkodean UTF-8 
+ke titik kode U+10FFFF, agar sesuai dengan batas UTF-16. RFC 2279 yang sudah usang mengizinkan pengkodean UTF-8 hingga titik kode 
+(yang saat itu sah)
+
+Catatan penting !!!
+Sebuah "karakter" dapat memakan waktu lebih dari 4 byte karena terbuat dari lebih dari satu titik kode. Misalnya karakter 
+Mengajar membutuhkan 8 byte karena "dibangun dari sepasang nilai skalar Unicode". Yang dimana arti dari (dibangun dari sepasang nilai skalar Unicode)
+merujuk pada penggunaan dua kode skalar Unicode untuk merepresentasikan satu karakter tertentu, seperti emoji atau karakter yang lebih kompleks.
+
+Encoding proses Dalam contoh ini, digit merah, hijau, dan biru menunjukkan bagaimana bit dari titik kode didistribusikan di 
+antara byte UTF-8. Bit tambahan yang ditambahkan oleh proses pengkodean UTF-8 ditampilkan dalam warna hitam :
+
+    1. Titik kode Unicode untuk tanda euro € adalah U+20AC.
+    2. Karena titik kode ini terletak di antara U+0800 dan U+FFFF, diperlukan tiga byte untuk dikodekan.
+    3. Heksadesimal 20AC adalah biner 0010 0000 10 10 1100 . Dua angka nol di depan ditambahkan karena pengkodean tiga byte 
+       memerlukan tepat enam belas bit dari titik kode.
+    4. Karena panjang pengkodeannya adalah tiga byte, byte depannya dimulai dengan tiga angka 1, lalu angka 0 ( 1110... ).
+    5. Empat bit paling signifikan dari titik kode disimpan dalam empat bit urutan rendah yang tersisa dari byte ini ( 1110 0010 ), 
+       menyisakan 12 bit titik kode yang belum dikodekan ( ... 0000 10 10 1100 ).
+    6. Semua byte kelanjutan berisi tepat enam bit dari titik kode. Jadi enam bit berikutnya dari titik kode disimpan dalam enam 
+       bit urutan rendah dari byte berikutnya, dan 10 disimpan dalam dua bit urutan tinggi untuk menandainya sebagai byte lanjutan (jadi 10 000010 ).
+    7. Akhirnya enam bit terakhir dari titik kode disimpan dalam enam bit urutan rendah dari byte terakhir, dan sekali lagi 10 
+       disimpan dalam dua bit urutan tinggi ( 10 101100 ).
+
+Link artikel tentang UTF-8 = https://en.wikipedia.org/wiki/UTF-8
+
+(a). UTF-16 (Format Transformasi Unicode 16-bit) adalah pengkodean karakter yang mampu mengkodekan semua 1.112.064 titik kode 
+     unicode yang valid (sebenarnya jumlah titik kode ini ditentukan oleh desain UTF-16). Pengkodeannya adalah panjang variabel, 
+     karena titik kode dikodekan dengan satu atau dua unit kode 16-bit. Dan UTF-16 digunakan oleh sistem seperti Microsoft Windows API,
+     bahasa pemrograman Java dan JavaScript /ECMAScript. Terkadang juga digunakan untuk file data teks biasa dan pemrosesan kata di 
+     Microsoft Windows. Ini digunakan melalui SMS (standar SMS menentukan UCS-2, tetapi hampir semua pengguna sebenarnya menerapkan UTF-16 agar emoji berfungsi).
+
+(b). UTF-16 adalah satu-satunya pengkodean web yang tidak kompatibel dengan ASCII, dan tidak pernah mendapatkan popularitas di 
+     web, yang dinyatakan oleh kurang dari 0,002% halaman web (dan banyak di antaranya sebenarnya UTF-8 karena "spesifikasi pengkodean karakter yang bertentangan" dan/atau "pengkodean karakter yang ditentukan salah"). 
+     UTF-8, sebagai perbandingan, menyumbang 98% dari seluruh halaman web.
+
+Link artikel tentang UTF-16 = https://en.wikipedia.org/wiki/UTF-16
+
+Catatan penting !!!
+pada setiap abjad yang dari a ... b yang dimana masih satu cakupan pembahasan tentang unicode
